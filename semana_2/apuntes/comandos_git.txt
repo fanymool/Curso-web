@@ -1,0 +1,14 @@
+Abrir Power shell
+ver en que ruta estoy
+cd .. (x2 para llegar al dic C)
+cd xampp (escribir x y tabular)
+cd htdocs
+cd curso-web
+
+tarea ok o para guardar cambios
+
+git add * 
+git commit -m "" (Feat: Agregar algo)(Fix: Arreglar algo el update) 
+git push 
+
+
