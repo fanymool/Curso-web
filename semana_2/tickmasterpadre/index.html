@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="statics/styles/styletm.css">
+    <title>TICKETREALPRO</title>
+    <link rel="icon" href="https://theme.zdassets.com/theme_assets/2359162/f8a018421ecb7c742f22fba10f5306dd53a9b454.png" type="image/x-icon">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <img src="https://theme.zdassets.com/theme_assets/2359162/f8a018421ecb7c742f22fba10f5306dd53a9b454.png" width="70" height="70"> 
+                </th>
+                <th>
+                    <h1 id="tituloprin" class="titulote" align ="left"><i>TICKETREALPRO</i></h1>
+                </th>
+                <!-- <th>
+                    <span><img src="https://i.pinimg.com/564x/7f/48/95/7f489515dac18efbf6bb3d60cfb3bdca.jpg" alt="fire"></span>
+                </th> -->
+            </tr>
+        </thead>
+    </table>
+    <!-- <h1 id="tituloprin" class="titulote" align ="center"><i>TICKETREALPRO</i></h1> -->
+    <table align="center"; cellpadding="30 px">
+        <thead>
+            <tr>
+                <th>
+                    
+                    <p>Bienvenidxs a TICKETREALPRO</p>    
+                    <p>Una plataforma donde encontraras los</p>
+                    <p>eventos de tus artistas favoritos >.< </p> 
+                </th>
+                <th>
+                    <h2 id="concert" class="baner1"> 
+                        CONCIERTOS
+                    </h2>
+                </th>
+                <th>
+                    <h2 id="fest" class="baner1"> 
+                        FESTIVALES
+                    </h2>
+                </th>
+                <th>
+                    <h2 id="cultu" class="baner1"> 
+                        TEATRO Y CULTURA
+                    </h2>
+                </th>
+                <th>
+                    <h2 id="sport" class="baner1"> 
+                        DEPORTES
+                    </h2>
+                </th>
+                <th>
+                    <h2 id="fam" class="baner1"> 
+                        FAMILIARES
+                    </h2>
+                </th>
+                <th>
+                    <h2 id="special" class="baner1">
+                        ESPECIALES
+                    </h2>
+                </th>
+            </tr>
+        </thead>
+    </table>
+    <hr>
+    <table align="center"; cellpadding="10 px">
+        <thead>
+            <tr>
+                <th>
+                    <img src="https://i.pinimg.com/564x/29/c8/51/29c8511055f743d88b368d149eb06d0c.jpg" width="200" height="200">
+                </th>
+                <th>
+                    <img src="https://i.pinimg.com/564x/65/85/b3/6585b363561143541bc504e771ccc26a.jpg" width="200" height="200">
+                </th>
+                <th>
+                    <img src="https://i.pinimg.com/564x/df/fa/3c/dffa3c42528bdf604faff3a30ced92a5.jpg" width="200" height="200">
+                </th>
+                <th>
+                    <img src="https://i.pinimg.com/236x/98/1d/f6/981df6f320309e356ba00a5f91bc6874.jpg" width="200" height="200">
+                </th>
+                <th>
+                    <img src="https://i.pinimg.com/564x/84/77/f0/8477f0c9bfcf529ae1d26bada31073c8.jpg" width="200" height="200">
+                </th>
+                <th>
+                    <img src="https://i.pinimg.com/564x/c3/6f/c1/c36fc10317ef3d1f0f6d29b0d01dfc00.jpg" width="200" height="200">
+                </th>
+                <th>
+                    <img src="https://i.pinimg.com/564x/4e/41/e5/4e41e575b407963fd742828bccf6e20a.jpg" width="200" height="200">
+                </th>
+                <th>
+                    <img src="https://i.pinimg.com/564x/93/fd/b3/93fdb3e954be14504d902e73e2d263a2.jpg" width="200" height="200">
+                </th>
+                
+            </tr>
+        </thead>
+    </table>
+    <hr>
+    <h2 id="plis" class="tit2">Por favor rellena el siguiente formulario para continuar con tu compra de boletos ^^ ^^ ¡Ya estas muy cerca! ^^ ^^ ¡Falta poco!</h2>
+
+    <form action="./registroticket.php" method="post" target="_blank" autocomplete="on" >
+        <fieldset id="datos" class="forms">
+            <legend align="center">Datos de tú compra</legend>
+            <label for="nombre">Nombre:<br>
+                <input id="nombre"  name="nombre" type="text" placeholder="Nombre(s)" size="45" maxlength="35" minlength="2" autofocus required/>
+            </label>
+            <br><br>
+            <label for="apellido">Apellido:<br>
+                <input id="apellido" name="apellido" type="text" placeholder="Paterno Materno" size="45" maxlength="45" minlength="3" required/>
+            </label>
+            <br><br>
+            <label>Ingresa tu correo electronico:<br>
+                <input type="email" placeholder="manifestandig@gmail.com" size="45" maxlength="35" required>
+            </label>
+            <br><br>
+            <label>Teléfono celular:<br>
+                <input type="tel" maxlength="10" placeholder="5500000000" size="7" required>
+            </label>
+            <br><br>
+            <label>Método de pago:<br>
+                <input type="radio" name="pag" checked>OXXO.<br>
+                <input type="radio" name="pag">Tarejta de débito.<br>
+                <input type="radio" name="pag">Tarjeta de crédito.<br>
+                <input type="radio" name="pag">Paypal.<br>
+            </label>
+            <br>
+            <label>Cantidad de boletos:
+                <input type="number" min="1" max="15" placeholder="1-15" size="7" required>
+            </label>
+            <br><br>
+            <label for="zone">Zona:
+                <select id="zone">
+                    <option value="pl">Platino</option>
+                    <option value="va">Verde A</option>
+                    <option value="na">Naranja A</option>
+                    <option value="vb">Verde B</option>
+                    <option value="nb">Naranja B</option>
+                    <option value="gral">General</option>
+                    <option value="nc">Naranja C</option>
+                    <option value="vc">Verde C</option>
+                </select>
+            </label>
+            <br>
+            
+            <br><br>
+            <label>Artista:
+                <select id="Artista">
+                    <option value="a">Luis Miguel</option>
+                    <option value="b">BTS</option>
+                    <option value="c">Arctic Monkeys</option>
+                    <option value="d">Taylor Swift</option>
+                    <option value="e">Die Antwoord</option>
+                    <option value="f">Seventeen</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Fecha del evento:
+                <input type="date" min="2023-01-01" max="2023-12-31" required>
+            </label>
+
+            <br><br>
+            <label>Lugar del evento:<br>
+                <input type="radio" name="place" checked>Foro Sol<br>
+                <input type="radio" name="place">Palacio de los deportes<br>
+                <input type="radio" name="place">Teatro metropolita<br>
+                <input type="radio" name="place">Auditorio<br>
+            </label>
+            <br><br>
+            <label>Extras para una mejor experiencia:<br>
+                <input type="checkbox" name="extras" checked>Estacionamiento<br>
+                <input type="checkbox" name="extras">Wifi<br>
+                <input type="checkbox" name="extras">Alimentos VIP<br>
+                <input type="checkbox" name="extras">Baños VIP<br>
+            </label>
+            <br><br><br>
+            
+            <input type="submit" value="Enviar mi compra">
+            <input type="reset" value="Borrar mi compra">
+            
+        </fieldset>
+    </form>
+    <span>
+        <img src="https://i.pinimg.com/564x/f6/b1/cc/f6b1cc8fa8a36e278e5c3c02f7ecc983.jpg">
+        <img src="https://i.pinimg.com/564x/f6/b1/cc/f6b1cc8fa8a36e278e5c3c02f7ecc983.jpg">
+        <img src="https://i.pinimg.com/564x/f6/b1/cc/f6b1cc8fa8a36e278e5c3c02f7ecc983.jpg">
+        <img src="https://i.pinimg.com/564x/30/d3/d5/30d3d572270a9cb9128e7d4358ac2e38.jpg" width="180" height="188">
+    </span>
+</body>
+</html>
