@@ -102,7 +102,7 @@
     <hr>
     <h2 id="plis" class="tit2">Por favor rellena el siguiente formulario para continuar con tu compra de boletos ^^ ^^ ¡Ya estas muy cerca! ^^ ^^ ¡Falta poco!</h2>
 
-    <form action="./registroticket.php" method="post" target="_blank" autocomplete="on" >
+    <form action="./dynamics/registroticket.php" method="post" target="_blank" autocomplete="on" >
         <fieldset id="datos" class="forms">
             <legend align="center">Datos de tú compra</legend>
             <label for="nombre">Nombre:<br>
@@ -113,70 +113,71 @@
                 <input id="apellido" name="apellido" type="text" placeholder="Paterno Materno" size="45" maxlength="45" minlength="3" required/>
             </label>
             <br><br>
-            <label>Ingresa tu correo electronico:<br>
-                <input type="email" placeholder="manifestandig@gmail.com" size="45" maxlength="35" required>
+            <label for="correo">Ingresa tu correo electronico:<br>
+                <input id="correo" name="correo" type="email" placeholder="manifestandig@gmail.com" size="45" maxlength="35" required>
             </label>
             <br><br>
-            <label>Teléfono celular:<br>
-                <input type="tel" maxlength="10" placeholder="5500000000" size="7" required>
+            <label for="telefono">Teléfono celular:<br>
+                <input id="telefono" name="telefono" type="tel" maxlength="10" placeholder="5500000000" size="7" required>
             </label>
             <br><br>
-            <label>Método de pago:<br>
-                <input type="radio" name="pag" checked>OXXO.<br>
-                <input type="radio" name="pag">Tarejta de débito.<br>
-                <input type="radio" name="pag">Tarjeta de crédito.<br>
-                <input type="radio" name="pag">Paypal.<br>
+            <label for="pag" >Método de pago:<br>
+                <input type="radio" name="pag" value="OXXO" checked>OXXO.<br>
+                <input type="radio" name="pag" value="Tarejta de débito">Tarejta de débito.<br>
+                <input type="radio" name="pag" value="Tarjeta de crédito.">Tarjeta de crédito.<br>
+                <input type="radio" name="pag" value="Paypal." >Paypal.<br>
             </label>
             <br>
+            <!-- min="1" max="15" -->
             <label>Cantidad de boletos:
-                <input type="number" min="1" max="15" placeholder="1-15" size="7" required>
+                <input name="cant_boletos" type="number"  placeholder="1-15" size="7" required>
             </label>
             <br><br>
             <label for="zone">Zona:
-                <select id="zone">
-                    <option value="pl">Platino</option>
-                    <option value="va">Verde A</option>
-                    <option value="na">Naranja A</option>
-                    <option value="vb">Verde B</option>
-                    <option value="nb">Naranja B</option>
-                    <option value="gral">General</option>
-                    <option value="nc">Naranja C</option>
-                    <option value="vc">Verde C</option>
+                <select name="zona" id="zone">
+                    <option value="Platino">Platino</option>
+                    <option value="Verde A">Verde A</option>
+                    <option value="Naranja A">Naranja A</option>
+                    <option value="Verde B">Verde B</option>
+                    <option value="Naranja B">Naranja B</option>
+                    <option value="General">General</option>
+                    <option value="Naranja C">Naranja C</option>
+                    <option value="Verde C">Verde C</option>
                 </select>
             </label>
             <br>
             
             <br><br>
             <label>Artista:
-                <select id="Artista">
-                    <option value="a">Luis Miguel</option>
-                    <option value="b">BTS</option>
-                    <option value="c">Arctic Monkeys</option>
-                    <option value="d">Taylor Swift</option>
-                    <option value="e">Die Antwoord</option>
-                    <option value="f">Seventeen</option>
+                <select name="artist" id="Artista">
+                    <option value="Luis Miguel">Luis Miguel</option>
+                    <option value="BTS">BTS</option>
+                    <option value="Arctic Monkeys">Arctic Monkeys</option>
+                    <option value="Taylor Swift">Taylor Swift</option>
+                    <option value="Die Antwoord">Die Antwoord</option>
+                    <option value="Seventeen">Seventeen</option>
                 </select>
             </label>
             <br><br>
+            
             <label>Fecha del evento:
-                <input type="date" min="2023-01-01" max="2023-12-31" required>
+                <input name="fecha" type="date" min="2023-01-01" max="2023-12-31" required>
             </label>
-
             <br><br>
-            <label>Lugar del evento:<br>
-                <input type="radio" name="place" checked>Foro Sol<br>
-                <input type="radio" name="place">Palacio de los deportes<br>
-                <input type="radio" name="place">Teatro metropolita<br>
-                <input type="radio" name="place">Auditorio<br>
+            <label for="place">Lugar del evento:<br>
+                <input type="radio" name="place" value="Foro Sol" checked>Foro Sol<br>
+                <input type="radio" name="place" value="Palacio de los deportes">Palacio de los deportes<br>
+                <input type="radio" name="place" value="Teatro metropolita">Teatro metropolita<br>
+                <input type="radio" name="place" value="Auditorio">Auditorio<br>
             </label>
             <br><br>
             <label>Extras para una mejor experiencia:<br>
-                <input type="checkbox" name="extras" checked>Estacionamiento<br>
-                <input type="checkbox" name="extras">Wifi<br>
-                <input type="checkbox" name="extras">Alimentos VIP<br>
-                <input type="checkbox" name="extras">Baños VIP<br>
+                <input type="checkbox" name="extras[]" value="Estacionamiento" checked>Estacionamiento.<br>
+                <input type="checkbox" name="extras[]" value="Wi-fi" >Wi-fi.<br>
+                <input type="checkbox" name="extras[]" value="Alimentos VIP" >Alimentos VIP.<br>
+                <input type="checkbox" name="extras[]" value="Baños VIP">Baños VIP.<br>
             </label>
-            <br><br><br>
+            <br><br><br> 
             
             <input type="submit" value="Enviar mi compra">
             <input type="reset" value="Borrar mi compra">
