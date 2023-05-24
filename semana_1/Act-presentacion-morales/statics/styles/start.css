@@ -25,6 +25,7 @@ body{
     height: 564rem;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Nunito', sans-serif;
 }
 
 h1{
@@ -32,6 +33,37 @@ h1{
     font-weight: 700;
     
 }
-div{
-    background-color: beige;
+/* ===================ID'S======================== */
+#hola{
+    position: absolute;
+    width: 321px;
+    height: 58px;
+    left: 250px;
+    top: 19px;
 }
+#holamorales{
+    position: absolute;
+    width: 321px;
+    height: 58px;
+    left: 1331px;
+    top: 19px;
+    font-family: 'Arvo', serif;
+}
+#gif1{
+    width: 17rem;
+    height: 15rem;
+}
+#gif2{
+    width: 17rem;
+    height: 15rem;
+}
+
+/* ===================CLASS======================== */
+.title{
+    background-color: rgba(245, 245, 220, 0.694);
+    border-radius: 10%;
+}
+.line2{
+    margin: auto;
+}
+
