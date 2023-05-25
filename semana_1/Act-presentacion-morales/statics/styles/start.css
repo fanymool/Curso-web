@@ -20,9 +20,9 @@ body::-webkit-scrollbar-thumb:hover{
 /* ===================ETIQUETAS======================== */
 body{
     background-image: url(https://i.pinimg.com/564x/2e/2b/a2/2e2ba2b74e3905da30e5f8c6b2ea4366.jpg) ;
-    background-repeat: round;
+    background-repeat: repeat-x;
     background-position: center center;
-    height: 564rem;
+    /* height: 564rem; */
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Nunito', sans-serif;
