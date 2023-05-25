@@ -20,18 +20,24 @@ body::-webkit-scrollbar-thumb:hover{
 /* ===================ETIQUETAS======================== */
 body{
     background-image: url(https://i.pinimg.com/564x/2e/2b/a2/2e2ba2b74e3905da30e5f8c6b2ea4366.jpg) ;
-    background-repeat: repeat-x;
+    background-repeat: round;
     background-position: center center;
     height: 564rem;
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Nunito', sans-serif;
+    
 }
 
 h1{
     font-family: 'Arvo', serif;
     font-weight: 700;
-    
+    color: rgb(107, 15, 58);
+}
+h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: rgb(107, 15, 58);
 }
 /* ===================ID'S======================== */
 #hola{
@@ -40,6 +46,7 @@ h1{
     height: 58px;
     left: 250px;
     top: 19px;
+    
 }
 #holamorales{
     position: absolute;
@@ -48,6 +55,7 @@ h1{
     left: 1331px;
     top: 19px;
     font-family: 'Arvo', serif;
+    color: rgb(107, 15, 58);
 }
 #gif1{
     width: 17rem;
@@ -57,13 +65,167 @@ h1{
     width: 17rem;
     height: 15rem;
 }
+#tablechar{
+    border-collapse: collapse;
+    border: 7px;
+    border-style: dashed;
+    border-color: rgba(104, 95, 84, 0.726);
+}
+#top5{
+    display: block;
+    background-color: rgba(188, 223, 252, 0.778);
+    border-radius: 2rem;
+    color: rgb(76, 76, 187);
+}
+#intro{
+    display: block;
+    background-color: rgba(239, 188, 252, 0.778);
+    border-radius: 2rem;
+    color: rgb(143, 76, 187);
+}
+#favsongs{
+    display: block;
+    background-color: rgba(214, 82, 155, 0.486);
+    border-radius: 2rem;
+    color: bisque;
+}
+#favs{
+    display: block;
+    background-color: rgba(212, 147, 214, 0.438);
+    border-radius: 2rem;
+}
+#videos{
+    display: flex;
+    justify-content: space-between;
 
+}  
+#song1{
+    background-color: rgba(195, 243, 243, 0.37);
+    height: 3rem;
+    width: 23rem;
+    border-radius: 2rem;
+}  
+#song2{
+    background-color: rgba(195, 196, 243, 0.37);
+    height: 3rem;
+    width: 23rem;
+    border-radius: 2rem;
+} 
+#song3{
+    background-color: rgba(233, 195, 243, 0.37);
+    height: 3rem;
+    width: 37rem;
+    border-radius: 2rem;
+} 
+#topics{
+    display: block;
+    background-color: rgba(72, 79, 112, 0.438);
+    border-radius: 2rem;
+    color: rgb(54, 52, 52);
+}
+#temas{
+    display: flex;
+}
+#draw{
+    display: block;
+    background-color: rgba(168, 224, 135, 0.438);
+    border-radius: 2rem;
+    color: rgb(33, 66, 40);
+}
+#draw2{
+    display: grid;
+    place-items: center;
+}
 /* ===================CLASS======================== */
 .title{
-    background-color: rgba(245, 245, 220, 0.694);
-    border-radius: 10%;
+    background-color: rgba(245, 245, 220, 0.534);
+    border-radius: 10rem;
 }
 .line2{
     margin: auto;
 }
+.photos_I{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+}
+.list_gifts{
+    display: flex;
+    justify-content: space-around;
+}
+.moresongs{
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 309px;
+    height: 300px;
+    background-image: url(../media/img/disc.jpeg) ;
+    margin: 20px;
+    color: rgb(36, 4, 4);
+    border-radius: 2rem;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.box:hover{
+    width: 330px;
+    height: 400px;
+    background-color: beige;
+}
+/* =======POKEBOLAAAA======= */
 
+
+.pokeball{
+    width: 50rem;
+    height: 50rem;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50%;
+}
+.pokeball::before{
+    content: '';
+    width: 50rem;
+    height: 25rem;
+    background-color: rgb(170, 9, 9);
+    border-radius: 25rem 25rem 0 0;
+    position: absolute;
+}
+.pokeball_detalles{
+    width: 50rem;
+    height: 3rem;
+    background-color: rgb(15, 15, 15);
+    margin-top: 25rem;
+    position: absolute;
+}
+.pokeball_detalles::before{
+    content: '';
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(15, 15, 15);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -10rem;
+    margin-left: 15rem;
+}
+.pokeball_detalles::after{
+    content: '';
+    width: 15rem;
+    height: 15rem;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -7.3rem;
+    margin-left: 17.5rem;
+}
+/* .pokeball:hover{
+    content: '';
+    width: 50rem;
+    height: 25rem;
+    transform: scaleX(0.7) scaleY(0.7);
+    border-radius: 25rem 25rem 0 0;
+    position: absolute;
+} */
