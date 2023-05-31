@@ -9,8 +9,9 @@ body {
 
 /* ===========ID'S==================================== */
 #icon1 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 #titulo1 {
@@ -24,6 +25,9 @@ body {
 
 }
 
+#hpface{
+    border-radius: 3rem;
+}
 
 
 /* ===========CLASS==================================== */
@@ -32,18 +36,23 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.texto-bottom{
+    font-weight: 600;
+    text-align: center;
+}
 
 /* ===========GRID PRINCIPAL====================================== */
 .container-grid {
     display: grid;
     grid-template-columns: repeat(6, 300px);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(3, 300px);
     padding: 30px;
     gap: 15px;
 }
 
 .imgs {
     object-fit: cover;
+    border-radius: 2rem;
 }
 
 .plants-container:nth-child(1) {
@@ -51,9 +60,48 @@ body {
 }
 
 .plants-container:nth-child(2) {
-    grid-column-start: span 4;
+    grid-column-start: span 1;
 }
 
+.plants-container:nth-child(3) {
+    grid-column-start: span 1;
+}
+
+.plants-container:nth-child(4) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.plants-container:nth-child(5) {
+    grid-column-start: span 1;
+}
+
+.plants-container:nth-child(6) {
+    grid-column-start: span 1;
+}
+
+.plants-container:nth-child(7) {
+    grid-column-start: span 1;
+}
+/* imagenes hasta el 8 */
+.plants-container:nth-child(8) {
+    grid-column-start: span 1;
+}
+/* textos */
+.plants-container:nth-child(9){
+    grid-column-start: span 1;
+    background-color: rgba(162, 253, 172, 0.312);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+
+
+/* ult gif */
+.plants-container:nth-child(10) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
 
 
 
