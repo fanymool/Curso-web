@@ -1,0 +1,11 @@
+/* ==============FONTS============================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+
+*{
+    background: linear-gradient(farthest-corner at bottom, rgb(245, 246, 247),rgb(149, 184, 236));
+    /* background: radial-gradient(circle farthest-corner at top left, red, blue); */
+
+
+    font-family: 'Roboto Mono', monospace;
+}
