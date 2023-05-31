@@ -4,7 +4,6 @@
 
 body {
     background-color: rgb(116, 202, 116);
-
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -25,31 +24,75 @@ body {
 
 }
 
-#gif1 {
-    width: 540px;
-    height: 250px;
-    grid-area: 2/1;
-}
 
-
-#maceta1 {
-    width: 250px;
-    height: 250px;
-
-    /* grid-area: 1/4/3/6; */
-}
 
 /* ===========CLASS==================================== */
 
-.container1 {
+.banner1 {
     display: flex;
     justify-content: space-between;
 }
 
-.container2 {
+/* ===========GRID PRINCIPAL====================================== */
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 300px);
+    grid-template-rows: repeat(2, 300px);
+    padding: 30px;
+    gap: 15px;
+}
+
+.imgs {
+    object-fit: cover;
+}
+
+.plants-container:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.plants-container:nth-child(2) {
+    grid-column-start: span 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container2 {
     display: grid;
     grid-template-columns: repeat(5, 250px);
     grid-template-rows: repeat(4, 250px);
-    gap: 15px;
-
+    gap: 20px;
+    padding: 20px;
 }
+
+.imgs{
+    width: 100%;
+}
+
+
+
+
+
+.imgs:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-column-start: span 2;
+}
+
+.imgs:nth-child(2) {
+    width: 250px;
+    height: 250px;
+    grid-row-start: span 2;
+} */
