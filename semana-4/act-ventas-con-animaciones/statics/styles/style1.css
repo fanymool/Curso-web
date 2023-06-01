@@ -2,6 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap');
 /* font-family: 'Roboto Mono', monospace; */
 
+/* ===================SCROLLBAR======================== */
+body::-webkit-scrollbar {
+    width: 15px;
+    background: rgba(255, 255, 255, 0.778);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(69, 199, 127, 0.778);
+    border-radius: 35px;
+    border-right: 4px solid rgba(255, 255, 255, 0.778);
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(48, 113, 70);
+}
+
+
+/* =====TO BODY=========================================== */
+
 body {
     background-color: rgb(159, 212, 159);
     font-family: 'Roboto Mono', monospace;
@@ -30,6 +50,8 @@ body {
     margin: 2rem;
 
 }
+
+/* =========================TRANSICIONES============================================ */
 /* =======transicion florhpface=================== */
 #hpface {
     border-radius: 3rem;
@@ -37,15 +59,96 @@ body {
 
 #hpface:active {
     transform: translateX(150px);
-    /* transform: scale(1.3); */
 }
+
 /* =======mini-gyroide=================== */
-.imgs:hover{
+.imgs:hover {
     transition-property: border-radius;
     transition-duration: 0.6s;
     transition-delay: 0.2s;
 
     border-radius: 8.5rem;
+}
+
+/* ANIMATIONS===================================================================== */
+#greencube {
+
+    animation: rainbow-background 6s infinite;
+}
+
+@keyframes rainbow-background {
+    0% {
+        background-color: rgb(159, 212, 159);
+    }
+
+    33.333% {
+        background-color: #93e593;
+    }
+
+    50% {
+        background-color: rgba(162, 253, 172, 0.312);
+    }
+
+    66.667% {
+        background-color: #7bc6ac;
+    }
+
+    100% {
+        background-color: rgb(162, 246, 205);
+    }
+}
+
+/* catarina animation */
+.catarina {
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 70%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+
+#tienda_fisica {
+    background-color: rgba(245, 245, 220, 0.363);
+    margin: 3rem;
+    border-radius: 3rem;
+    text-align: center;
+    border-color: #619d61;
+    border-style: solid;
+
+    animation-name: vertical-slidein;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes vertical-slidein {
+    from {
+        margin-top: 70%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+
+.texto-bottomm {
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(66, 163, 66, 0.564);
+    border-radius: 2rem;
+    margin: 1.5rem;
+    padding: 0.4rem;
 }
 
 
@@ -61,13 +164,7 @@ body {
     text-align: center;
 }
 
-.texto-bottomm {
-    font-weight: 600;
-    text-align: center;
-    background-color: rgba(66, 163, 66, 0.564);
-    border-radius: 2rem;
-    margin: 1.5rem;
-}
+
 
 .namanima {
     display: flex;
@@ -124,18 +221,24 @@ body {
     grid-column-start: span 1;
 }
 
-/* textos */
+/* catarina img */
 .plants-container:nth-child(9) {
     grid-column-start: span 2;
-    background-color: rgba(162, 253, 172, 0.312);
     border-radius: 2rem;
     padding: 2rem;
+}
+
+/* textos */
+.plants-container:nth-child(10) {
+    grid-column-start: span 2;
+
+
 }
 
 
 
 /* ult gif */
-.plants-container:nth-child(10) {
+.plants-container:nth-child(11) {
     grid-column-start: 5;
     grid-column-end: 7;
 }
