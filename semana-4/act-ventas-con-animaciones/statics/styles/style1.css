@@ -145,8 +145,8 @@ transform: scale(1.1);
         margin-top: 0%;
     }
 }
-/* ==========IMG GRANDE============= */
-#preciogyroide {
+/* ==========PRECIOS============= */
+#precio {
     animation-name: horizontal-slidein;
     animation-duration: 1s;
     animation-iteration-count: infinite;
