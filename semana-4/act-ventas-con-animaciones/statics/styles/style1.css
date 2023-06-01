@@ -30,14 +30,14 @@ body {
     margin: 2rem;
 
 }
-
 /* =======transicion florhpface=================== */
 #hpface {
     border-radius: 3rem;
 }
 
-#hpface:hover {
-    transform: scale(1.3);
+#hpface:active {
+    transform: translateX(150px);
+    /* transform: scale(1.3); */
 }
 /* =======mini-gyroide=================== */
 .imgs:hover{
