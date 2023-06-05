@@ -42,10 +42,13 @@ class mov_Pokemon{
         this.potencia = potencia;
         this.tipo_movimiento = tipo_movimiento;    
     }
-    attack_mov(entrenador1){
+    attack_mov(){
         console.log(`${this.nombrepokemon} ataco con ${this.nombreattack}, con una potencia de ${this.potencia} y es tipo ${this.tipo_movimiento[0]}`);
     }
+
 }
+
+
 
 //*********************************************presentacion del entrenador 1
 let entrenador1 = new entrenador_pokemon("Jasmine", "Johto", 200, ['Ampharos', ' Magneton', ' Pikachu', ' Charmander', ' Bulbasaur', ' Steelix']);
@@ -69,7 +72,7 @@ let garde_attack = new mov_Pokemon("Gardevoir", "espejoxlux", "4902 pc", ['espec
 
 //////////////////////empieza la batalla
 console.log("**********************************************************");//solo es un separador
-console.log("¡¡¡Que comience la batalla!!!");
+console.log("*        ¡¡¡Que comience la batalla!!!                   *");
 console.log("**********************************************************");//solo es un separador
 
 // itworks
@@ -84,6 +87,15 @@ console.log("GO!!");
 steel_attack.attack_mov();
 garde_attack.attack_mov();
 
+console.log("**********************************************************");//solo es un separador
+console.log("K.O!!");
+console.log(`El ganador es la entrenadora ${entrenador1.nombre} que cuenta ya con ${entrenador1.no_medallas} medallas`);
+console.log(`Mientras que la entrenadora ${entrenador2.nombre} ha perdido, suerte para la proxima`);
+
+
+
+// la verdad esta act si me costo, y mas pq aunque me gusta pokemon, no conocia esta pagina, pero hice lo que pude
+// abajo estan mis intentos fallidos :')
 
 
 
@@ -95,30 +107,32 @@ garde_attack.attack_mov();
 
 
 
+//////////////////////////////////////
+//     k_o_battle(garde_attack.potencia, steel_attack.potencia){
+// if (garde_attack.potencia>steel_attack.potencia) {
+//     console.log(`Steelix ha ganado y GardevoirF ha perdido`);
+// } else {
+//     console.log(`Gardevoir ha ganado y Steelix ha perdido`);
+// }
+
+
+// k_o_battle(garde_attack.potencia,steel_attack.potencia);
+// if (garde_attack.potencia>steel_attack.potencia) {
+//     console.log(`Steelix ha ganado y Gardevoir ha perdido`)
+// } else {
+//     console.log(`Gardevoir ha ganado y Steelix ha perdido`)
+// }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     k_o_mov(steel_attack){
+// if (steel_attack.potencia>garde_attack.potencia) {
+//     console.log('${steel_attack} ha ganado');
+// } else {
+//     console.log(`${steel_attack} ha perdido y ganó ${garde_attack}`);
+// }
+    
 
 
 
@@ -138,19 +152,6 @@ garde_attack.attack_mov();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // if (team_pokemon=[0]){
 //     entrenador1.choose();//Entrenador 1 (Jasmine) elije a uno de sus pokémones
 //     console.log[Ampharos.ataca_con()]; 
@@ -160,43 +161,6 @@ garde_attack.attack_mov();
     
 
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
