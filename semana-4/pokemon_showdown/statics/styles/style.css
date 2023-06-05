@@ -10,7 +10,10 @@ h1 {
     text-align: center;
     color: rgb(14, 46, 109);
 }
-
+h3{
+    text-align: center;
+    color: rgb(34, 78, 165);
+}
 img {
     display: block;
     margin-left: auto;
