@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡OH! MY TO-DO LIST</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./libs/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <!-- personal css -->
+    <link rel="stylesheet" href="./statics/styles/style1.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">BIENVENIDX A ¡OH! MY TO-DO LIST</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="form-Task">
+                            <div class="form-group">
+                                <input type="text" id="title" class="form-control" maxlength="50" autocomplete="on"
+                                    placeholder="Título de la tarea" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" id="description" cols="30" rows="10" class="form-control" maxlength="300"
+                                    autocomplete="on" placeholder="Describe tu tarea" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Guardar tarea aquí.</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- link a mi JavaScript -->
+    <script src="./dynamics/js/script.js"></script>
+    <!-- link a JavaScript en bootstrap -->
+    <script src="./libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
