@@ -7,6 +7,9 @@ Esta organizado por semanas y por proyectos (tareas)
 - mapeo Corazón 
 ## semana_2
 - ticketmaster que si funciona
+##### semana 3
+- Gabo myinstagram (pero en excel y de envio el respaldo en moddle)
+- fueron actividades en equipo
 ## semana_4
 - pagina de ventas con animaciones
 - pokemon showdown2
