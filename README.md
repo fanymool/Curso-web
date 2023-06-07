@@ -2,7 +2,7 @@
 ### tareas curso web
 Esta organizado por semanas y por proyectos (tareas)
 ## semana_1
-- presentacion (/ presentacion con diseño ya css bien)
+- presentacion (/ presentacion con diseño ya css bien de Zarco de la semana3)
 - pagina de ventas
 - mapeo Corazón 
 ## semana_2
@@ -10,6 +10,7 @@ Esta organizado por semanas y por proyectos (tareas)
 ##### semana 3
 - Gabo myinstagram (pero en excel y de envio el respaldo en moddle)
 - fueron actividades en equipo
+- intro a sql Daniel, se entrego un pdf en moddle
 ## semana_4
 - pagina de ventas con animaciones
 - pokemon showdown2
