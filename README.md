@@ -10,3 +10,4 @@ Esta organizado por semanas y por proyectos (tareas)
 ## semana_4
 - pagina de ventas con animaciones
 - pokemon showdown2
+- Fersa, actividad de mytuiter
