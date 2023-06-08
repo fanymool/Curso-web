@@ -15,3 +15,4 @@ Esta organizado por semanas y por proyectos (tareas)
 - pagina de ventas con animaciones
 - pokemon showdown2
 - Fersa, actividad de mytuiter
+- mi to-do list de tareas pipipipi me mantendre humilde
