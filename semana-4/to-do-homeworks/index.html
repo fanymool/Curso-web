@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡OH! MY TO-DO LIST</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/fd/d3/b9/fdd3b9ab7bf1591478a7b187f6a84c26.jpg" type="image/x-icon">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./libs/bootstrap-5.3.0-dist/css/bootstrap.css">
     <!-- personal css -->
@@ -18,37 +19,62 @@
             <a class="navbar-brand" href="#">BIENVENIDX A ¡OH! MY TO-DO LIST</a>
         </div>
     </nav>
+
     <div class="container">
         <div class="row my-5">
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
                         <form id="form-Task">
-                            <div class="form-group">
+                            <div class="form-group"><!-- para poner el titulo de la tarea -->
                                 <input type="text" id="title" class="form-control" maxlength="50" autocomplete="on"
-                                    placeholder="Título de la tarea" required>
+                                    placeholder="Tarea" required>
                             </div>
-                            <div class="form-group">
-                                <textarea type="text" id="description" cols="30" rows="10" class="form-control" maxlength="300"
-                                    autocomplete="on" placeholder="Describe tu tarea" required></textarea>
+                            <!-- elegir materias y crear otras(que no se como aun xd) -->
+                            <div class="form-floating">
+                                <select class="form-select" id="formfloating"
+                                    aria-label="Floating label select example">
+                                    <option selected>Materias</option>
+                                    <option value="Matematicas">Matematicas</option>
+                                    <option value="Informatica">Informatica</option>
+                                    <option value="Ingles">Ingles</option>
+                                    <option value="Fisica">Fisica</option>
+                                    <option value="Quimica">Quimica</option>
+                                    <option value="Español">Español</option>
+                                    <option value="otro">Otra</option>
+                                </select>
+                                <label for="floatingSelect">Elige la materia</label>
                             </div>
-                            <button type="submit" class="btn btn-success btn-block">Guardar tarea aquí.</button>
+                            <!-- boton subir tarea -->
+                            <button type="submit" class="btn btn-outline-success"
+                                style="border-color: rgb(179, 76, 131); border-width: 3px;">Guardar tarea aquí.</button>
+                            <button id="borrar" class="btn btn-light" type="reset" style="color: rgb(139, 0, 76);">Limpiar</button>
                         </form>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-3 text-left">
+                        <p class="font-weight-bold">Completada?</p>
+                    </div>
+                    <div class="col-sm-3 text-left">
+                        <p id="totalhomewks" class="font-weight-bold">Tarea</p> 
+                    </div>
+                    <div class="col-sm-3 text-left">
+                        <p class="font-weight-bold">Materia</p> 
+                    </div>
+                    <div class="col-sm-3 text-right">
+                        <p class="font-weight-bold">Borrar de la lista</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="tasks"></div>
+            </div>
         </div>
-
+    </div </div>
     </div>
-
-
-
-
-
-
-
-
-
 
     <!-- link a mi JavaScript -->
     <script src="./dynamics/js/script.js"></script>
@@ -56,5 +82,6 @@
     <script src="./libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
 
 </body>
+<!-- sufri mucho sinceramnete -->
 
 </html>
